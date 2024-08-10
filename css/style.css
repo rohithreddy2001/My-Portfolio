@@ -171,7 +171,86 @@ img {
   .img-fluid {
     max-width: 100%;
     height: auto; }
+  
+  .Domain-Div {
+    height: auto;
+    width: 70%;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 2px;
+    flex-direction: column;
+    
+    align-items: start;
+    justify-content: center;
 
+  }
+
+  .project-details {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(26, 26, 26);
+    
+  }
+
+  .social-media {
+    height: auto;
+    width: 30%;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+    gap:10px
+
+  }
+
+  .row-dir {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Domain,.Skills {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    
+  }
+  .D_Name,.Skill_Name {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    color: rgb(255, 189, 57);
+    
+  }
+
+  .Linkidin-post,.Github-file {
+    width: 100%;
+    height: 40%;
+    font-size: 8px;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 2px;
+    color: #ffffff;
+    background-color: rgb(10, 102, 194);
+    cursor: pointer;
+    text-align:center;
+    border: none;
+}
+.Github-file {
+  background-color: rgb(51, 64, 81);
+}
+.Linkidin-post:active.Github-file:active {
+    transform: scale(1.2);
+}
+
+
+  
 svg {
   overflow: hidden;
   vertical-align: middle; }
