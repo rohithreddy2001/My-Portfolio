@@ -217,13 +217,13 @@ img {
   }
 
   .Domain,.Skills {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, serif;
     font-size: 14px;
     color: rgb(255, 255, 255);
     
   }
   .D_Name,.Skill_Name {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: cursive;
     font-size: 14px;
     color: rgb(255, 189, 57);
     
@@ -232,10 +232,10 @@ img {
   .Linkidin-post,.Github-file,.utube-vedio {
     width: 100%;
     height: 40%;
-    font-size: 8px;
+    font-size: 7px;
     font-weight: 500;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 2px;
+    font-family: system-ui;
+    padding-left: 2px;
     color: #ffffff;
     background-color: rgb(10, 102, 194);
     cursor: pointer;
@@ -243,15 +243,42 @@ img {
     border: none;
     border-radius: 5px;
 }
+/* .Linkidin-post:hover {
+  transform: scale(1.05);
+} */
 .Github-file {
   background-color: rgb(51, 64, 81);
 }
+/* .Github-file:hover {
+  transform: scale(1.05);
+} */
 .utube-vedio {
   background-color: rgb(251, 0, 0);
 }
-.Linkidin-post:active.Github-file:active {
-    transform: scale(1.2);
+/* .utube-vedio:hover {
+  transform: scale(1.05);
+} */
+
+
+
+.button-img {
+  width: 10px;
+    height: 10px;
+    cursor: pointer;
+    position: relative;
+    margin: 3px;
+    margin-right: -5px;
+    border: solid 1px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 1px;
+    
 }
+.button-img:hover {
+  transform: scale(1.2);
+}
+
+
+
 
 
   
