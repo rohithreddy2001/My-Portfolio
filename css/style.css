@@ -174,13 +174,13 @@ img {
   
   .Domain-Div {
     height: auto;
-    width: 70%;
+    width: 60%;
     display: flex;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding-left: 2px;
     flex-direction: column;
-    
+    /* gap: 10px; */
     align-items: start;
     justify-content: center;
 
@@ -197,7 +197,7 @@ img {
 
   .social-media {
     height: auto;
-    width: 30%;
+    width: 40%;
     display: flex;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -214,25 +214,83 @@ img {
   .row-dir {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
   }
 
   .Domain,.Skills {
-    font-family: Georgia, serif;
+    
+    align-content: center;
+    font-family: system-ui;
     font-size: 14px;
     color: rgb(255, 255, 255);
     
   }
+  .Skills {
+    /* background-color: red; */
+    align-items: center;
+    /* margin-bottom: 15px; */
+  }
   .D_Name,.Skill_Name {
-    font-family: cursive;
-    font-size: 14px;
-    color: rgb(255, 189, 57);
+    width: auto;
+    padding: 5px;
+    border-radius: 3px;
+    align-content: center;
+    font-family: system-ui;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(47, 72, 88);
     
+  }
+  .D_Name:hover {
+    color: rgb(255, 225, 104);
+    transform: scale(1.1);
+  }
+
+  .Skills-Div {
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Skill_Name1,.Skill_Name2,.Skill_Name3 {
+    
+    margin-right: 2px;
+    padding: 2px;
+    /* align-content: center; */
+    font-family: monospace;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    background-color: var(--green);
+  }
+  .Skill_Name1{
+    background-color: rgb(7, 113, 135);
+    border-radius: 3px;
+  }
+  .Skill_Name2 {
+    background-color: rgb(51, 102, 153);
+    border-radius: 3px;
+  }
+
+  .Skill_Name3 {
+    background-color: rgb(7, 79, 87);
+    border-radius: 3px;
+  }
+
+  .Skill_Name1:hover,.Skill_Name2:hover,.Skill_Name3:hover {
+    transform: scale(1.1);
   }
 
   .Linkidin-post,.Github-file,.utube-vedio {
     width: 100%;
-    height: 40%;
-    font-size: 7px;
+    height: 50%;
+    font-size: 11px;
     font-weight: 500;
     font-family: system-ui;
     padding-left: 2px;
@@ -242,6 +300,9 @@ img {
     text-align:center;
     border: none;
     border-radius: 5px;
+}
+.Linkidin-post {
+  margin-right: 2px;
 }
 /* .Linkidin-post:hover {
   transform: scale(1.05);
@@ -262,12 +323,12 @@ img {
 
 
 .button-img {
-  width: 10px;
-    height: 10px;
+  width: 12px;
+    height: 12px;
     cursor: pointer;
     position: relative;
-    margin: 3px;
-    margin-right: -5px;
+    margin-bottom: 3px;
+    margin-right: -8px;
     border: solid 1px;
     border-color: rgb(255, 255, 255);
     border-radius: 1px;
