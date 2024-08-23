@@ -9516,7 +9516,11 @@ textarea.form-control {
       .blog-entry .text .heading a {
         color: #fff; }
         .blog-entry .text .heading a:hover, .blog-entry .text .heading a:focus, .blog-entry .text .heading a:active {
-          color: #ffbd39; }
+          color: rgb(255, 189, 57);
+          text-decoration-line: underline }
+  .heading:hover {
+    transform: scaleY(1.1);
+  }
   .blog-entry .meta {
     display: inline-block;
     margin-right: 5px;
