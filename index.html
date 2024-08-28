@@ -233,7 +233,27 @@
 									  <div class="about-info">
 										<p><span class="title-s">Name: </span> <span>Rohith Reddy Rudraiah Gari</span></p>
 										<p><span class="title-s">DOB: </span> <span>15-June-2001</span></p>
-										<p><span class="title-s">Age: </span> <span>22</span></p>
+										<p><span class="title-s">Age: </span> <span id="age"></span></p>
+										
+
+										<script>
+											function calculateAge(dob) {
+												const today = new Date();
+												const birthDate = new Date(dob);
+												let age = today.getFullYear() - birthDate.getFullYear();
+												const monthDiff = today.getMonth() - birthDate.getMonth();
+
+												if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+													age--;
+												}
+
+												return age;
+											}
+
+											const dob = '2001-06-15'; // Date of Birth
+											document.getElementById('age').textContent = calculateAge(dob);
+										</script>
+
 										<!-- <p><span class="title-s">Job Role: </span> <span>Senior Data Analyst</span></p> -->
 										<!-- <p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> -->
 										<p><span class="title-s">Address: </span> <span>Hyderabad, India</span></p>
@@ -243,9 +263,9 @@
 
 								<div class="skill-mf">
 									<p class="title-s">Skills</p>
-									<span>MYSQL</span> <span class="pull-right">70%</span>
+									<span>MYSQL</span> <span class="pull-right">75%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="95" aria-valuemin="0"
+										<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="95" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
 									
@@ -432,7 +452,7 @@
           </div>
         </div>
         <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
+          <div class="col-md-4 d-flex ftco-animate" id="My-Projects">
           	<div class="blog-entry justify-content-end">
 				<div class="img project-img">
 					<img src="images/proj_1.png" class="img-fluid" alt="Project 1">
@@ -463,7 +483,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
+          <div class="col-md-4 d-flex ftco-animate" id="My-Projects">
           	<div class="blog-entry justify-content-end">
 				<div class="img project-img">
 					<img src="images/proj_2.png" class="img-fluid" alt="Project 2">
@@ -494,7 +514,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
+          <div class="col-md-4 d-flex ftco-animate" id="My-Projects">
           	<div class="blog-entry">
 				<div class="img project-img">
 					<img src="images/proj_3.png" class="img-fluid" alt="Project 3">
@@ -528,7 +548,7 @@
 	<br>
 		<!-- added justify-content-center to center align the last two projects -->
 		<div class="row d-flex justify-content-left">  
-			<div class="col-md-4 d-flex ftco-animate">
+			<div class="col-md-4 d-flex ftco-animate" id="My-Projects">
 				<div class="blog-entry justify-content-end">
 					<div class="img project-img">
 						<img src="images/proj_4.png" class="img-fluid" alt="Project 4">
@@ -560,7 +580,7 @@
 				</div>
 			  </div>
 			</div>
-			<div class="col-md-4 d-flex ftco-animate">
+			<div class="col-md-4 d-flex ftco-animate" id="My-Projects">
 				<div class="blog-entry justify-content-end">
 					<div class="img project-img">
 						<img src="images/proj_7.png" class="img-fluid" alt="Project 7">
@@ -591,7 +611,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-4 d-flex ftco-animate">
+			<div class="col-md-4 d-flex ftco-animate" id="My-Projects">
 				<div class="blog-entry justify-content-end">
 					<div class="img project-img">
 						<img src="images/proj_5.png" class="img-fluid" alt="Project 7">
@@ -623,7 +643,7 @@
 				</div>
 			</div>
 		
-			<div class="col-md-4 d-flex ftco-animate">
+			<div class="col-md-4 d-flex ftco-animate" id="My-Projects">
 				<div class="blog-entry justify-content-end">
 					<div class="img project-img">
 						<img src="images/proj_6.png" class="img-fluid" alt="Project 6">
@@ -671,7 +691,7 @@
 			</div>
 		  </div>
 		  <div class="row d-flex">
-			<div class="col-md-4 d-flex ftco-animate">
+			<div class="col-md-4 d-flex ftco-animate" id="My-Certificates">
 				<div class="blog-entry justify-content-end">
 					<div class="img certificate-img">
 						<img src="images/certificate-1.png" class="img-fluid" alt="Certification 1">
@@ -685,7 +705,7 @@
 				</div>
 			  </div>
 			</div>
-			<div class="col-md-4 d-flex ftco-animate">
+			<div class="col-md-4 d-flex ftco-animate" id="My-Certificates">
 				<div class="blog-entry justify-content-end">
 					<div class="img certificate-img">
 						<img src="images/certificate-6.png" class="img-fluid" alt="Certification 6">
@@ -699,7 +719,7 @@
 				</div>
 			  </div>
 			</div>
-			<div class="col-md-4 d-flex ftco-animate">
+			<div class="col-md-4 d-flex ftco-animate" id="My-Certificates">
 				<div class="blog-entry justify-content-end">
 					<div class="img certificate-img">
 						<img src="images/certificate-2.png" class="img-fluid" alt="Certification 2">
@@ -713,7 +733,7 @@
 				</div>
 			  </div>
 			</div>
-			<div class="col-md-4 d-flex ftco-animate">
+			<div class="col-md-4 d-flex ftco-animate" id="My-Certificates">
 				<div class="blog-entry">
 					<div class="img certificate-img">
 						<img src="images/certificate-3.png" class="img-fluid" alt="Certification 3">
@@ -727,7 +747,7 @@
 				</div>
 			  </div>
 			</div>
-			<div class="col-md-4 d-flex ftco-animate">
+			<div class="col-md-4 d-flex ftco-animate" id="My-Certificates">
 				<div class="blog-entry">
 					<div class="img certificate-img">
 						<img src="images/certificate-4.png" class="img-fluid" alt="Certification 4">
@@ -741,7 +761,7 @@
 				</div>
 			  </div>
 			</div>
-			<div class="col-md-4 d-flex ftco-animate">
+			<div class="col-md-4 d-flex ftco-animate" id="My-Certificates">
 				<div class="blog-entry">
 					<div class="img certificate-img">
 						<img src="images/certificate-5.png" class="img-fluid" alt="Certification 5">
@@ -755,7 +775,7 @@
 				</div>
 			  </div>
 			</div>
-			<div class="col-md-4 d-flex ftco-animate">
+			<div class="col-md-4 d-flex ftco-animate" id="My-Certificates">
 				<div class="blog-entry">
 					<div class="img certificate-img">
 						<img src="images/certificate-7.png" class="img-fluid" alt="Certification 7">
@@ -769,7 +789,7 @@
 				</div>
 			  </div>
 			</div>
-			<div class="col-md-4 d-flex ftco-animate">
+			<div class="col-md-4 d-flex ftco-animate" id="My-Certificates">
 				<div class="blog-entry justify-content-end">
 					<div class="img certificate-img">
 						<img src="images/certificate-8.png" class="img-fluid" alt="Certification 8">
