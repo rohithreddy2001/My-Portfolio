@@ -200,7 +200,7 @@ img {
   }
 
   .projects-count {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     max-width: 100%;
@@ -217,7 +217,7 @@ img {
   }
 
   .Project_No {
-    margin-top: 10px;
+    margin-top: 12px;
     height: 100%;
     font-weight: bold;
     font-size: 32px;
